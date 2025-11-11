@@ -18,5 +18,3 @@ A modern, responsive landing page for Tasky - a minimalist productivity applicat
 - Contact form with Firebase backend
 - Dark theme with gradient accents
 - Modern UI/UX design
-
-## File Structure
