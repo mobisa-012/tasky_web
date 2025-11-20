@@ -45,7 +45,6 @@ const features = [
 
 const screenshots = [
   { src: '/dashboard.jpg', alt: 'Tasky Dashboard' },
-  { src: '/task.jpg', alt: 'Create a new task' },
   { src: '/habit.jpg', alt: 'Create a new habit' },
   { src: '/journal.jpg', alt: 'Journal your day away' },
   { src: '/recordings.jpg', alt: 'Get all your thoughts in one place' },
@@ -1011,51 +1010,76 @@ const handleSubmit = async (e: React.FormEvent) => {
           </motion.p>
           
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
-            <Link href="/terms" passHref legacyBehavior>
-              <motion.a
-                whileHover={{ 
-                  color: '#818cf8',
-                  y: -2
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: 'spring', stiffness: 400 }}
+            <motion.div
+              whileHover={{ y: -2, color: '#818cf8' }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400 }}
+            >
+              <Link
+                href="/terms"
                 className="text-xs sm:text-sm text-indigo-400 hover:text-indigo-300 transition-colors px-1 sm:px-2 py-1 rounded"
               >
                 Terms of Service
-              </motion.a>
-            </Link>
+              </Link>
+            </motion.div>
             
             <span className="hidden sm:inline text-gray-600">•</span>
             
-            <Link href="/privacy" passHref legacyBehavior>
-              <motion.a
-                whileHover={{ 
-                  color: '#818cf8',
-                  y: -2
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: 'spring', stiffness: 400 }}
+            <motion.div
+              whileHover={{ y: -2, color: '#818cf8' }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400 }}
+            >
+              <Link
+                href="/privacy"
                 className="text-xs sm:text-sm text-indigo-400 hover:text-indigo-300 transition-colors px-1 sm:px-2 py-1 rounded"
               >
                 Privacy Policy
-              </motion.a>
-            </Link>
+              </Link>
+            </motion.div>
+
+            <span className="hidden sm:inline text-gray-600">•</span>
+
+            <motion.div
+              whileHover={{ y: -2, color: '#818cf8' }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400 }}
+            >
+              <Link
+                href="/feature"
+                className="text-xs sm:text-sm text-indigo-400 hover:text-indigo-300 transition-colors px-1 sm:px-2 py-1 rounded"
+              >
+                Request a Feature
+              </Link>
+            </motion.div>
+
+            
+            <span className="hidden sm:inline text-gray-600">•</span>
+
+            <motion.div whileHover={{ y: -2 }} whileTap={{ scale: 0.95 }} transition={{ type: 'spring', stiffness: 400 }}>
+              <Link 
+                href="/bugs"
+                className="text-xs sm:text-sm text-indigo-400 hover:text-indigo-300 transition-colors px-1 sm:px-2 py-1 rounded"
+              >
+                Report a bug
+              </Link>
+            </motion.div>
             
             <span className="hidden sm:inline text-gray-600">•</span>
             
-            <Link href="#contact" passHref legacyBehavior>
-              <motion.a
-                whileHover={{ 
-                  color: '#818cf8',
-                  y: -2
-                }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: 'spring', stiffness: 400 }}
+            <motion.div
+              whileHover={{ y: -2, color: '#818cf8' }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: 'spring', stiffness: 400 }}
+            >
+              <Link
+                href="#contact"
                 className="text-xs sm:text-sm text-indigo-400 hover:text-indigo-300 transition-colors px-1 sm:px-2 py-1 rounded"
               >
                 Contact Us
-              </motion.a>
-            </Link>
+              </Link>
+            </motion.div>
+
           </div>
 
           {/* Social links */}

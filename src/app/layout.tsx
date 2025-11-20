@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Tasky | Focus on What Matters",
   description: "The minimalist productivity app designed for deep focus and effortless task management.",
-  themeColor: "#111827", // Dark background color
+  themeColor: "#111827",
   openGraph: {
     title: "Tasky | Focus on What Matters",
     description: "The minimalist productivity app designed for deep focus",
